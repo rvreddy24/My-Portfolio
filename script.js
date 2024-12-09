@@ -69,7 +69,15 @@ const projects = [
         technologies: ["Python", "OpenCV", "TensorFlow", "Deep Learning"],
         icon: "fas fa-user-shield",
         color: "#607D8B"
+    },
+    {
+    "title": "IoT-Based Smart Parking Management System",
+    "description": "Designed a smart parking system using IoT technology to provide real-time parking updates via ultrasonic sensors, ESP32 microcontroller, and a web-based interface. Features time-based filtering for accurate detection and energy-efficient components for sustainability.",
+    "technologies": ["ESP32", "Ultrasonic Sensors", "HTML", "CSS", "JavaScript", "WebSocket", "Arduino"],
+    "icon": "fas fa-parking",
+    "color": "#3F51B5"
     }
+    
 ];
 
 // Load Projects
