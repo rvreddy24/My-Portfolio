@@ -76,16 +76,8 @@ const projects = [
     "technologies": ["ESP32", "Ultrasonic Sensors", "HTML", "CSS", "JavaScript", "WebSocket", "Arduino"],
     "icon": "fas fa-parking",
     "color": "#3F51B5"
-    },
-    {
-    title: "CSV Analyzer",
-    description: "A premium web-based CSV file analyzer with interactive visualizations and statistical analysis.",
-    technologies: ["JavaScript", "HTML", "CSS", "Chart.js", "D3.js"],
-    icon: "fas fa-file-csv",
-    color: "#FF5722",
-    link: "https://rvreddy24.github.io/CSV-Data-Visualizer/"
     }
-
+    
 ];
 
 // Load Projects
@@ -95,7 +87,7 @@ function loadProjects() {
     
     projects.forEach((project, index) => {
         const delay = (index + 1) * 100;
-        const projectCard = `
+        const projectCard = 
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="${delay}">
                 <div class="project-card shadow-sm">
                     <div class="project-header d-flex align-items-center mb-3">
@@ -108,13 +100,13 @@ function loadProjects() {
                         <p class="project-description text-muted">${project.description}</p>
                         <div class="project-technologies">
                             ${project.technologies.map(tech => 
-                                `<span class="tech-badge">${tech}</span>`
+                                <span class="tech-badge">${tech}</span>
                             ).join('')}
                         </div>
                     </div>
                 </div>
             </div>
-        `;
+        ;
         projectsContainer.innerHTML += projectCard;
     });
 }
