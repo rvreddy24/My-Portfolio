@@ -77,7 +77,15 @@ const projects = [
     "icon": "fas fa-parking",
     "color": "#3F51B5"
     }
-    
+    {
+    title: "CSV Analyzer",
+    description: "A premium web-based CSV file analyzer with interactive visualizations and statistical analysis.",
+    technologies: ["JavaScript", "HTML", "CSS", "Chart.js", "D3.js"],
+    icon: "fas fa-file-csv",
+    color: "#FF5722",
+    link: "https://rvreddy24.github.io/CSV-Data-Visualizer/"
+    }
+
 ];
 
 // Load Projects
