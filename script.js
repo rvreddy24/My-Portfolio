@@ -76,7 +76,7 @@ const projects = [
     "technologies": ["ESP32", "Ultrasonic Sensors", "HTML", "CSS", "JavaScript", "WebSocket", "Arduino"],
     "icon": "fas fa-parking",
     "color": "#3F51B5"
-    }
+    },
     {
     title: "CSV Analyzer",
     description: "A premium web-based CSV file analyzer with interactive visualizations and statistical analysis.",
