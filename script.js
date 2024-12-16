@@ -1,6 +1,15 @@
 // Project Data
 const projects = [
     {
+        title: "CSV Analyzer",
+        description: "A premium web-based CSV file analyzer with interactive visualizations and statistical analysis. Features include interactive charts, statistical analysis, glass morphism design, and real-time data processing.",
+        technologies: ["HTML", "CSS", "JavaScript", "Chart.js", "D3.js", "Bootstrap"],
+        icon: "fas fa-chart-bar",
+        color: "#4CAF50",
+        link: "https://rvreddy24.github.io/CSV-Data-Visualizer/",
+        
+    },
+    {
         title: "Basic Environmental Monitoring System",
         description: "Developed a real-time temperature and humidity monitoring system using ESP32 and DHT11, with LED indicators and customizable user interface.",
         technologies: ["ESP32", "C++", "DHT11", "Serial Communication"],
@@ -87,7 +96,7 @@ function loadProjects() {
     
     projects.forEach((project, index) => {
         const delay = (index + 1) * 100;
-        const projectCard = 
+        const projectCard = `
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="${delay}">
                 <div class="project-card shadow-sm">
                     <div class="project-header d-flex align-items-center mb-3">
@@ -98,15 +107,32 @@ function loadProjects() {
                     </div>
                     <div class="project-content">
                         <p class="project-description text-muted">${project.description}</p>
+                        ${project.features ? `
+                        <div class="project-features mb-3">
+                            <h4 class="features-title h6 mb-2">Key Features:</h4>
+                            <ul class="features-list">
+                                ${project.features.map(feature => `
+                                    <li>${feature}</li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
                         <div class="project-technologies">
                             ${project.technologies.map(tech => 
-                                <span class="tech-badge">${tech}</span>
+                                `<span class="tech-badge">${tech}</span>`
                             ).join('')}
                         </div>
+                        ${project.link ? `
+                        <div class="project-link mt-3">
+                            <a href="${project.link}" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt me-2"></i>View Project
+                            </a>
+                        </div>
+                        ` : ''}
                     </div>
                 </div>
             </div>
-        ;
+        `;
         projectsContainer.innerHTML += projectCard;
     });
 }
