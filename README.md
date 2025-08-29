@@ -49,7 +49,7 @@ I have obtained several certifications that enhance my knowledge and skills in d
 Feel free to reach out to me via email or phone:
 
 - Email: [rajvarshithreddy@gmail.com](mailto:rajvarshithreddy@gmail.com)
-- Phone: +1 (913) 710-9834
+- Phone: +91 9492478959
 
 ## Technologies Used
 
